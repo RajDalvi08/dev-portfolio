@@ -1,0 +1,6 @@
+@"
+video_frames_30fps_compressed.zip
+video_frames_30fps_high_quality_jpg.zip
+Man_wearing_black_turtleneck_20260921125515.mp4
+frames/
+"@ | Out-File -Encoding utf8 .gitignore

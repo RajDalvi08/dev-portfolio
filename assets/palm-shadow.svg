@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="leafGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4a261a" stop-opacity="0.85"/>
+      <stop offset="60%" stop-color="#8c4731" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#d97757" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+  <!-- Stem -->
+  <path d="M -20 620 C 40 480, 110 320, 180 160 C 210 90, 240 40, 260 10" stroke="url(#leafGrad)" stroke-width="4" stroke-linecap="round"/>
+  <!-- Leaflets Left Side -->
+  <path d="M 50 460 C 20 440, -10 430, -50 435 C -30 450, 0 470, 50 460 Z" fill="url(#leafGrad)"/>
+  <path d="M 70 410 C 30 385, -5 380, -40 390 C -20 405, 20 420, 70 410 Z" fill="url(#leafGrad)"/>
+  <path d="M 95 350 C 45 320, 10 310, -25 325 C 0 340, 45 355, 95 350 Z" fill="url(#leafGrad)"/>
+  <path d="M 120 290 C 70 255, 30 250, 0 265 C 30 280, 75 295, 120 290 Z" fill="url(#leafGrad)"/>
+  <path d="M 145 230 C 95 190, 55 190, 30 205 C 60 220, 105 235, 145 230 Z" fill="url(#leafGrad)"/>
+  <path d="M 175 170 C 130 130, 90 130, 70 145 C 100 160, 140 175, 175 170 Z" fill="url(#leafGrad)"/>
+  <path d="M 210 110 C 170 70, 130 75, 115 90 C 145 102, 180 115, 210 110 Z" fill="url(#leafGrad)"/>
+  <path d="M 240 50 C 210 20, 180 25, 165 38 C 190 48, 218 55, 240 50 Z" fill="url(#leafGrad)"/>
+  <!-- Leaflets Right Side -->
+  <path d="M 60 470 C 90 450, 125 445, 160 455 C 135 470, 95 480, 60 470 Z" fill="url(#leafGrad)"/>
+  <path d="M 85 415 C 120 390, 160 385, 195 395 C 170 410, 125 425, 85 415 Z" fill="url(#leafGrad)"/>
+  <path d="M 110 355 C 150 325, 195 320, 235 330 C 200 350, 155 365, 110 355 Z" fill="url(#leafGrad)"/>
+  <path d="M 135 295 C 180 260, 225 255, 265 270 C 230 290, 180 305, 135 295 Z" fill="url(#leafGrad)"/>
+  <path d="M 160 235 C 205 195, 255 195, 290 210 C 255 230, 210 245, 160 235 Z" fill="url(#leafGrad)"/>
+  <path d="M 190 175 C 235 135, 280 135, 310 150 C 275 170, 235 185, 190 175 Z" fill="url(#leafGrad)"/>
+  <path d="M 220 115 C 265 80, 305 85, 330 100 C 300 115, 260 128, 220 115 Z" fill="url(#leafGrad)"/>
+  <path d="M 250 55 C 285 28, 320 32, 340 45 C 315 58, 282 65, 250 55 Z" fill="url(#leafGrad)"/>
+  <!-- Tip -->
+  <path d="M 260 10 C 275 -5, 290 -10, 305 -15 C 290 5, 275 10, 260 10 Z" fill="url(#leafGrad)"/>
+</svg>

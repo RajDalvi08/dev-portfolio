@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Raj Dalvi — Digital Designer &amp; Creative Portfolio</title>
+  <meta name="description"
+    content="Digital designer with a passion for clean aesthetics, strong typography and meaningful layouts. I design websites, interfaces and brands that leave a lasting impression.">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23e27a56'><circle cx='12' cy='12' r='10'/></svg>">
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Minimalist Loading Screen -->
+  <div id="loader" class="loader" aria-live="polite">
+    <div class="loader-content">
+      <div class="loader-title">INITIALIZING EXPERIENCE</div>
+      <div class="loader-bar-container">
+        <div id="loader-bar" class="loader-bar"></div>
+      </div>
+      <div class="loader-status">
+        <span id="loader-percent">0%</span>
+        <span class="loader-subtext">Loading 240 cinematic frames</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Canvas Container (Fixed Behind All Content) -->
+  <div id="canvas-container" class="canvas-container">
+    <canvas id="frame-canvas" aria-label="Interactive background animation"></canvas>
+    <!-- Ambient Warm Vignette Overlay -->
+    <div class="canvas-ambient-glow"></div>
+  </div>
+
+  <!-- Decorative Botanical Palm Silhouette -->
+  <div class="palm-accent-layer" aria-hidden="true">
+    <img src="assets/palm-shadow.svg" alt="" class="palm-shadow-img">
+  </div>
+
+  <!-- Main Scrollable Portfolio Wrapper -->
+  <div class="portfolio-container">
+
+    <!-- Top Navigation Header -->
+    <header class="site-header" id="site-header">
+      <div class="nav-brand">
+        <a href="#" class="designer-tag">RAJ DALVI</a>
+      </div>
+
+      <nav class="nav-pill-container" aria-label="Main Navigation">
+        <a href="#about" class="nav-pill-link active">About</a>
+        <a href="#projects" class="nav-pill-link">Projects</a>
+        <a href="#services" class="nav-pill-link">Services</a>
+        <a href="#testimonials" class="nav-pill-link">Testimonials</a>
+        <a href="#contact" class="nav-pill-link">Contact</a>
+      </nav>
+
+      <div class="nav-action">
+        <a href="#contact" class="nav-cta-btn">
+          <span>Start a Project</span>
+          <span class="nav-cta-icon-circle">
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <!-- Background Typography Layer (Behind Person) -->
+      <!-- Background Typography Layer -->
+      <div class="hero-background-layer" aria-hidden="true">
+        <div class="hero-halo"></div>
+
+        <div class="hero-bg-title-wrapper">
+          <h1 class="hero-bg-title">PORTFOLIO</h1>
+        </div>
+      </div>
+
+
+
+      <!-- Hero Content (UI Layer in Foreground) -->
+      <div class="hero-body">
+        <!-- Hero Left Column -->
+        <div class="hero-left">
+          <h2 class="hero-statement">
+            DESIGNING<br>
+            IDEAS THAT<br>
+            <span class="accent-inspire">INSPIRE</span>
+          </h2>
+          <div class="accent-line"></div>
+          <p class="hero-desc">
+            I craft bold, functional and timeless digital experiences that connect brands with people.
+          </p>
+          <div class="hero-signature">Raj Dalvi</div>
+
+          <a href="#contact" class="availability-card">
+            <div class="avail-text">
+              <span class="avail-label">AVAILABLE FOR</span>
+              <span class="avail-status">FREELANCE &amp; FULL TIME</span>
+            </div>
+            <div class="avail-arrow">↗</div>
+          </a>
+        </div>
+
+        <!-- Hero Right Column with Rotating Stamp Badge -->
+        <div class="hero-right">
+          <div class="rotating-badge-container">
+            <div class="rotating-badge">
+              <svg viewBox="0 0 200 200" class="badge-svg" aria-hidden="true">
+                <path id="badgePath" d="M 100, 100 m -70, 0 a 70,70 0 1,1 140,0 a 70,70 0 1,1 -140,0" fill="none" />
+                <text>
+                  <textPath href="#badgePath" startOffset="0%">
+                    USER FOCUSED • DETAIL DRIVEN •
+                  </textPath>
+                </text>
+              </svg>
+              <div class="badge-center-star">✦</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subtle Scroll Prompt -->
+      <div id="scroll-hint" class="scroll-hint">
+        <div class="mouse-icon">
+          <div class="mouse-wheel"></div>
+        </div>
+        <span class="scroll-text">SCROLL TO EXPLORE</span>
+      </div>
+    </section>
+
+    <!-- Section: About Me & My Design Process (Two Columns) -->
+    <section class="content-section grid-about-process" id="about">
+      <!-- Left Column: About Me -->
+      <div class="panel-card about-panel">
+        <h3 class="section-title">ABOUT ME <span class="title-dash">—</span></h3>
+        <p class="about-text">
+          Digital designer with a passion for clean aesthetics, strong typography and meaningful layouts. I design
+          websites, interfaces and brands that leave a lasting impression.
+        </p>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stat-num">05+</span>
+            <span class="stat-label">YEARS OF<br>EXPERIENCE</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">120+</span>
+            <span class="stat-label">PROJECTS<br>COMPLETED</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">40+</span>
+            <span class="stat-label">HAPPY<br>CLIENTS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: My Design Process -->
+      <div class="panel-card process-panel" id="services">
+        <h3 class="section-title">MY DESIGN PROCESS <span class="title-dash">—</span></h3>
+        <div class="process-grid">
+          <!-- Step 01: Research -->
+          <div class="process-card">
+            <div class="process-header">
+              <span class="process-step">01</span>
+              <div class="process-icon-box">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+              </div>
+            </div>
+            <h4 class="process-name">RESEARCH</h4>
+            <p class="process-desc">Understanding goals, audience and context.</p>
+          </div>
+
+          <!-- Step 02: Ideation -->
+          <div class="process-card">
+            <div class="process-header">
+              <span class="process-step">02</span>
+              <div class="process-icon-box">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 20h9"></path>
+                  <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                </svg>
+              </div>
+            </div>
+            <h4 class="process-name">IDEATION</h4>
+            <p class="process-desc">Sketching ideas and crafting creative concepts.</p>
+          </div>
+
+          <!-- Step 03: Design -->
+          <div class="process-card">
+            <div class="process-header">
+              <span class="process-step">03</span>
+              <div class="process-icon-box">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="3" y1="9" x2="21" y2="9"></line>
+                  <line x1="9" y1="21" x2="9" y2="9"></line>
+                </svg>
+              </div>
+            </div>
+            <h4 class="process-name">DESIGN</h4>
+            <p class="process-desc">Building visual hierarchy and pixel perfect layouts.</p>
+          </div>
+
+          <!-- Step 04: Deliver -->
+          <div class="process-card">
+            <div class="process-header">
+              <span class="process-step">04</span>
+              <div class="process-icon-box">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z">
+                  </path>
+                  <path
+                    d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z">
+                  </path>
+                  <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                  <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                </svg>
+              </div>
+            </div>
+            <h4 class="process-name">DELIVER</h4>
+            <p class="process-desc">Refining, testing and delivering high quality results.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Featured Work (4 Projects Grid) -->
+    <section class="content-section featured-section" id="projects">
+      <div class="section-header-wrap">
+        <h3 class="section-title">FEATURED WORK <span class="title-dash">—</span></h3>
+      </div>
+      <div class="projects-grid">
+        <!-- Project 01 -->
+        <article class="project-card">
+          <div class="project-card-header">
+            <span class="project-num">01</span>
+          </div>
+          <div class="project-img-box">
+            <img src="assets/project-1.jpg" alt="Luxe Watch Co. Web Design" class="project-img" loading="lazy">
+            <div class="project-hover-overlay">
+              <span class="view-project-btn">EXPLORE ↗</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h4 class="project-title">LUXE WATCH CO.</h4>
+            <span class="project-category">WEB DESIGN</span>
+          </div>
+        </article>
+
+        <!-- Project 02 -->
+        <article class="project-card">
+          <div class="project-card-header">
+            <span class="project-num">02</span>
+          </div>
+          <div class="project-img-box">
+            <img src="assets/project-2.jpg" alt="Aura Skincare Branding and Web Design" class="project-img"
+              loading="lazy">
+            <div class="project-hover-overlay">
+              <span class="view-project-btn">EXPLORE ↗</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h4 class="project-title">AURA SKINCARE</h4>
+            <span class="project-category">BRANDING &amp; WEB</span>
+          </div>
+        </article>
+
+        <!-- Project 03 -->
+        <article class="project-card">
+          <div class="project-card-header">
+            <span class="project-num">03</span>
+          </div>
+          <div class="project-img-box">
+            <img src="assets/project-3.jpg" alt="Datafuse Dashboard UI UX Design" class="project-img" loading="lazy">
+            <div class="project-hover-overlay">
+              <span class="view-project-btn">EXPLORE ↗</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h4 class="project-title">DATAFUSE DASHBOARD</h4>
+            <span class="project-category">UI/UX DESIGN</span>
+          </div>
+        </article>
+
+        <!-- Project 04 -->
+        <article class="project-card">
+          <div class="project-card-header">
+            <span class="project-num">04</span>
+          </div>
+          <div class="project-img-box">
+            <img src="assets/project-4.jpg" alt="Kayra Boutique Branding" class="project-img" loading="lazy">
+            <div class="project-hover-overlay">
+              <span class="view-project-btn">EXPLORE ↗</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h4 class="project-title">KAYRA BOUTIQUE</h4>
+            <span class="project-category">BRANDING</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Section: Achievements & Let's Work Together (Two Columns) -->
+    <section class="content-section grid-achieve-contact" id="contact">
+      <!-- Left Column: Achievements -->
+      <div class="panel-card achieve-panel" id="testimonials">
+        <h3 class="section-title">ACHIEVEMENTS <span class="title-dash">—</span></h3>
+        <div class="achieve-grid">
+          <!-- Badge 1: Design Excellence -->
+          <div class="achieve-item">
+            <div class="achieve-badge-circle">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                </polygon>
+              </svg>
+            </div>
+            <span class="achieve-text">
+              AWARDED<br>
+              DESIGN EXCELLENCE<br>
+              2024
+            </span>
+          </div>
+
+          <!-- Badge 2: Upwork Top Rated -->
+          <div class="achieve-item">
+            <div class="achieve-badge-circle">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                <polygon points="12 5 13 7.5 15.5 8 13.5 10 14 12.5 12 11 10 12.5 10.5 10 8.5 8 11 7.5 12 5"
+                  fill="currentColor" stroke="none"></polygon>
+              </svg>
+            </div>
+            <span class="achieve-text">
+              TOP RATED<br>
+              DESIGNER<br>
+              ON UPWORK
+            </span>
+          </div>
+
+          <!-- Badge 3: Behance Featured -->
+          <div class="achieve-item">
+            <div class="achieve-badge-circle">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <!-- Laurel Wreath -->
+                <path d="M7 21c-2.5-3-3-8 0-13 1-1.5 2.5-3 5-3"></path>
+                <path d="M17 21c2.5-3 3-8 0-13-1-1.5-2.5-3-5-3"></path>
+                <circle cx="12" cy="14" r="3"></circle>
+              </svg>
+            </div>
+            <span class="achieve-text">
+              FEATURED<br>
+              ON BEHANCE<br>
+              GALLERY
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Let's Work Together -->
+      <div class="panel-card contact-panel">
+        <h3 class="section-title">LET'S WORK TOGETHER <span class="title-dash">—</span></h3>
+        <p class="contact-subtitle">
+          Have a project in mind?<br>
+          Let's create something amazing.
+        </p>
+
+        <div class="contact-inner-flex">
+          <div class="contact-details">
+            <a href="mailto:hello@rajdalvi.design" class="contact-row">
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </span>
+              <span class="contact-value">hello@rajdalvi.design</span>
+            </a>
+
+            <a href="tel:+919876543210" class="contact-row">
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+              </span>
+              <span class="contact-value">+91 98765 43210</span>
+            </a>
+
+            <div class="contact-row static-row">
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </span>
+              <span class="contact-value">Mumbai, India</span>
+            </div>
+
+            <a href="https://www.rajdalvi.design" target="_blank" rel="noopener noreferrer" class="contact-row">
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                  </path>
+                </svg>
+              </span>
+              <span class="contact-value">www.rajdalvi.design</span>
+            </a>
+          </div>
+
+          <!-- QR Code Card -->
+          <div class="qr-container">
+            <div class="qr-frame">
+              <img src="assets/qr-code.svg" alt="Scan to connect QR code" class="qr-image">
+            </div>
+            <span class="qr-label">SCAN TO CONNECT</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="social-links">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon"
+          aria-label="Instagram">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+        <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="social-icon"
+          aria-label="Behance">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path
+              d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-4.726 3-3.149 0-5.5-2.228-5.5-5.5 0-3.178 2.298-5.5 5.5-5.5 3.324 0 5.109 2.302 4.938 5.75h-7.689c.125 1.583 1.294 2.5 2.751 2.5 1.238 0 2.05-.625 2.451-1.25h2.275zm-4.726-5.5c-1.27 0-2.146.75-2.392 2h4.726c-.147-1.25-.97-2-2.334-2zm-12 5.5h-4v-14h4.5c2.485 0 4.5 1.791 4.5 4 0 1.206-.549 2.288-1.42 3.03 1.157.733 1.92 1.968 1.92 3.47 0 2.485-2.015 3.5-5.5 3.5zm-4-9h2.25c1.243 0 2.25-.757 2.25-2s-1.007-2-2.25-2h-2.25v4zm0 6h2.5c1.381 0 2.5-.896 2.5-2.5s-1.119-2.5-2.5-2.5h-2.5v5z" />
+          </svg>
+        </a>
+        <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="social-icon"
+          aria-label="Dribbble">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M19.13 5.09C15.22 9.14 10 10.44 2.25 10.94"></path>
+            <path d="M21.75 12.84c-6.62-1.41-12.14 1-16.38 6.32"></path>
+            <path d="M8.56 2.75c4.37 6 6 9.42 8 17.72"></path>
+          </svg>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon"
+          aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+      </div>
+      <div class="footer-note">THANK YOU FOR VISITING! <span class="heart-emoji">❤️</span></div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
